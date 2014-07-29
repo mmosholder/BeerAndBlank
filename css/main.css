@@ -1,0 +1,270 @@
+
+/***** Global *****/
+body {
+	font-family: "PT San", sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #fff;
+	background-color: #333;
+}
+ 
+/* Headings */
+h2 {font-size: 2.1em}	/* 22px */
+h3 {font-size: 1.8em}	/* 20px */
+h4 {font-size: 1.6em}	/* 18px */
+h5 {font-size: 1.43em}	/* 16px */
+h6 {font-size: 1em}	/* 14px */
+ 
+h2, h3, h4, h5, h6 {
+	font-weight: 500;
+	line-height: 1.1;
+	margin-bottom: .8em;
+}
+ 
+/* Anchors */
+
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+}
+ 
+/* Paragraphs */
+p {margin-bottom: 1.143em;}
+* p:last-child {margin-bottom: 0;}
+ 
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+ 
+::-moz-selection {background: #F6CF74; color: #fff;}
+::selection {background: #F6CF74; color: #fff;}
+
+ul {
+	list-style: none;
+}
+
+ul a{
+	margin-left: 5px;
+}
+	ul a:hover {
+		color: #25ffe6;
+	}
+
+section {
+	display: block;
+	min-height: 700px;
+	margin: 0 auto;
+	padding-top: 12%;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+}
+
+a.teal {
+	color: #25ffe6;
+}
+	a.teal:hover {
+		color: #fff;
+	}
+
+.teal {
+	color: #25ffe6;
+}
+
+.icon {
+	width: 64px;
+	height: 64px;
+}
+
+.arrow {
+	margin-left: 5px;
+}
+
+.row {
+	margin: 15px 0;
+}
+
+.center-align {
+	text-align: center;
+}
+
+.columns {
+	margin-top: 3%;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+/* ----------------------------------
+-------------------------------------
+---------------end Global Styles */
+
+.content {
+	max-width: 1280px;
+	width: 80%;
+	margin: 0 auto;
+	min-height: 700px;
+}
+
+.logo-container {
+	margin-top: 8%;
+}
+
+.main-container {
+	margin-top: 8%;
+	min-height: 500px;
+	text-align: center;
+}
+
+.main-container h1 {
+	font-weight: 500;
+}
+
+.logo {
+	padding: 5px;
+	margin: 0 auto;
+	height: 150px;
+	width: 150px;
+}
+
+.index-columns {
+	margin-top: 10%;
+}
+
+.index-container {
+	width: 40%;
+	margin: 0 auto;
+}
+
+
+/*-----------------------------Home Page & Nav Styles -------------------
+--------------------------------------------------------- */
+
+.main-nav {
+	background-color: #333;
+	float: left;
+	padding-top: 10px;
+	text-align: center;
+	width: 95%;
+	height: 22%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav > ul {
+	font-size: 3.8em;
+}
+	nav > ul > li {
+		float: left;
+		color: #fff;
+		font-weight: 700;
+		text-align: left;
+	}
+
+ul.secondary-nav {
+	display: none;
+	float: left;
+	padding-left: 0;
+	width: 100%;
+	transition: all 200ms ease-in-out;
+
+}
+
+nav li:hover ul.secondary-nav {
+		display: inline;
+		float: left;
+	}
+
+	ul.secondary-nav li {
+		padding: 0;
+		width: 15%;
+		display: inline;
+		margin: 0 2% 0 0;
+	}
+
+	nav li:hover ul.secondary-nav a:hover {
+		color: #25ffe6;
+	}
+
+/* ------------------------------------------------------- 
+Portfolio Page ---------------------------------------- */
+
+
+
+/* ------------------------------------------------------- 
+MEDIA QUERIES ---------------------------------------- */
+
+@media (max-width: 1660px) {
+	
+	.main-nav {
+		width: 100%;
+	}
+
+	.beer-logo {
+		width: 180px;
+	}
+
+	nav > ul {
+		font-size: 3.12em;
+		padding-top: 10px;
+	}
+
+	ul.secondary-nav li {
+		width: 14%;
+		margin: 0 2% 0 0;
+	}
+
+	section {
+		padding-top: 14%;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  { 
+	body {
+		font-size: 1.1em;
+	}
+
+	header {
+		width: 100%;
+		height: 180px;
+	}
+
+	.beer-logo {
+		width: 150px;
+	}
+
+	ul.secondary-nav {
+		width: 97%;
+	}
+
+	ul.secondary-nav li {
+		padding: 0;
+		width: 14%;
+		display: inline;
+		margin: 0 3% 0 0;
+	}
+}
+
+/* if portrait mode is detected, rotate the entire site -90 degrees to hint rotating to landscape */
+@media (orientation: portrait) {
+  body {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
